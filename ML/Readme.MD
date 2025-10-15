@@ -16,7 +16,7 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 
 ## 🚀 CARA PENGGUNAAN
 
-Notes: Download dataset ada di [Download dataset ada di `Capstone-Dicoding/Readme.md`](Capstone-Dicoding/Readme.md)
+Notes: Download dataset ada di [Download dataset ada di [Capstone-Dicoding](Capstone-Dicoding)
 
 Asumsi: Anda telah menginstal Python, `pip`, dan mengaktifkan *virtual environment* Anda (`daisee`).
 
