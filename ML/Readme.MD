@@ -24,7 +24,6 @@ Asumsi: Anda telah menginstal Python, `pip`, dan mengaktifkan *virtual environme
 
 Instal semua *library* yang diperlukan (disarankan menggunakan `requirements.txt` jika Anda membuatnya, atau instal satu per satu):
 
-```bash
 pip install ultralytics opencv-python numpy pytesseract pillow
 
 
