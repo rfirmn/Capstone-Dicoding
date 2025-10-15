@@ -34,7 +34,7 @@ pip install ultralytics opencv-python numpy pytesseract pillow
 
 Pastikan struktur direktori Anda sesuai dengan *path* yang digunakan dalam *notebook*:
 
-```
+```bash
 .
 ├── YOLO Model/
 │   └── my_model.pt             <-- Model YOLO Anda
