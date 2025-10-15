@@ -16,9 +16,12 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 
 ## 🚀 CARA PENGGUNAAN
 
-Notes: Download dataset ada di [Download dataset ada di [Capstone-Dicoding](https://github.com/rfirmn/Capstone-Dicoding)
+> Notes: Download dataset ada di [Download dataset ada di [Capstone-Dicoding](https://github.com/rfirmn/Capstone-Dicoding)
 
-Asumsi: Anda telah menginstal Python, `pip`, dan mengaktifkan *virtual environment* Anda (`daisee`).
+### Clone repository
+```bash
+git clone
+```
 
 ### 1. Instalasi Dependensi
 
