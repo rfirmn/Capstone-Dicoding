@@ -18,11 +18,6 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 
 > Notes: Download dataset ada di [Download dataset ada di [Capstone-Dicoding](https://github.com/rfirmn/Capstone-Dicoding)
 
-### Clone repository
-```bash
-git clone
-```
-
 ### 1. Instalasi Dependensi
 
 Instal semua *library* yang diperlukan (disarankan menggunakan `requirements.txt` jika Anda membuatnya, atau instal satu per satu):
