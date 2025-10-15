@@ -1,6 +1,4 @@
 
-
-
 # Inferensi Model YOLO untuk Ekstraksi Label Nutrisi (Nutrition Facts)
 
 Repositori ini berisi *notebook* inferensi dasar untuk mendeteksi dan mengekstrak label pada tabel informasi nilai gizi (nutrition facts) menggunakan **YOLO (You Only Look Once)**, dilanjutkan dengan proses *Optical Character Recognition* (OCR) menggunakan **Tesseract**.
@@ -24,8 +22,9 @@ Asumsi: Anda telah menginstal Python, `pip`, dan mengaktifkan *virtual environme
 
 Instal semua *library* yang diperlukan (disarankan menggunakan `requirements.txt` jika Anda membuatnya, atau instal satu per satu):
 
+```bash
 pip install ultralytics opencv-python numpy pytesseract pillow
-
+````
 
 > **Catatan Tesseract:** Pastikan perangkat Anda memiliki *engine* Tesseract OCR yang terinstal secara sistem. Jika menggunakan Windows/Linux, Anda mungkin perlu mengunduhnya secara terpisah.
 
@@ -33,7 +32,7 @@ pip install ultralytics opencv-python numpy pytesseract pillow
 
 Pastikan struktur direktori Anda sesuai dengan *path* yang digunakan dalam *notebook*:
 
-```bash
+```
 .
 ├── YOLO Model/
 │   └── my_model.pt             <-- Model YOLO Anda
