@@ -20,8 +20,12 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 ### 1. Instalasi Model
 
 Install model yang digunakan pada google drive berikut: 
+
 Cukup install file `my_model.pt`
-```https://drive.google.com/drive/folders/1YelOY4odI0NNTQWgDvR9V0MeOtZsS1XC?usp=drive_link```
+
+```
+https://drive.google.com/drive/folders/1YelOY4odI0NNTQWgDvR9V0MeOtZsS1XC?usp=drive_link
+```
 
 ### 2. Instalasi Dependensi
 
