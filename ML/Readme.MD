@@ -10,7 +10,6 @@ Tujuan utamanya adalah mendapatkan koordinat (Bounding Box) dari setiap komponen
 Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing gambar minimal**, yaitu hanya **resize** gambar input menjadi **640x640** sebelum dimasukkan ke model YOLO.
 
 * **Optimal:** Resize menjadi 640x640.
-* **Belum Optimal:** Percobaan penambahan *upscaling* dan *deskewing* pada gambar input (sebelum deteksi YOLO) belum menunjukkan peningkatan hasil yang signifikan.
 
 ---
 
@@ -23,7 +22,7 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 Instal semua *library* yang diperlukan (disarankan menggunakan `requirements.txt` jika Anda membuatnya, atau instal satu per satu):
 
 ```bash
-pip install ultralytics opencv-python numpy pytesseract pillow
+pip install -r requirements.txt
 ````
 
 > **Catatan Tesseract:** Pastikan perangkat Anda memiliki *engine* Tesseract OCR yang terinstal secara sistem. Jika menggunakan Windows/Linux, Anda mungkin perlu mengunduhnya secara terpisah.
