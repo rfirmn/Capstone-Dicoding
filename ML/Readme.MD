@@ -35,11 +35,11 @@ Pastikan struktur direktori Anda sesuai dengan *path* yang digunakan dalam *note
 ```
 .
 ├── YOLO Model/
-│   └── my_model.pt             <-- Model YOLO Anda
+│   └── my_model.pt             
 ├── image_dataset/
-│   └── image1.jpeg             <-- Gambar yang akan diinferensi
-├── infrence_base_yolo.ipynb    <-- Notebook ini
-└── cropped_objects/            <-- Akan dibuat otomatis sebagai folder output crop
+│   └── image1.jpeg            
+├── infrence_model.ipynb    
+└── cropped_objects/            
 ```
 
 ### 3\. Eksekusi Notebook
