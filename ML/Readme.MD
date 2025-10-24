@@ -79,20 +79,3 @@ Sel ini mengiterasi semua gambar yang baru saja di-*crop* dan menerapkan OCR.
   * **Output Konsol:** Menampilkan teks yang diekstrak untuk setiap objek, dan ringkasan akhir.
 
 -----
-
-## 📝 HASIL OCR YANG DIOBSERVASI
-
-Berikut adalah ringkasan hasil OCR yang diamati dari eksekusi *notebook*:
-
-| Label | Teks Terekstrak (Contoh) | Keterangan |
-| :---: | :---: | :--- |
-| **Gula** | `Guia §=— 3g` | Berhasil menangkap nilai (3g) tetapi ada distorsi karakter. |
-| **Garam** | `. Raram (natrium) 20mg 27` | Berhasil menangkap nilai (20mg), tetapi teks label awal tidak bersih. |
-| **Protein** | `4 ete eer 2 g S, 3` | Distorsi parah, nilai sulit diekstrak. |
-| **Takaran** | `Salian per kemasan: 1` | Hasil yang baik untuk label ini. |
-| **Lemak** | `ae ere ec es 4 O5q 1%` | Distorsi parah, nilai (0.5g atau 4g) sulit diekstrak. |
-
-**Kesimpulan OCR:** Meskipun *cropping* oleh model YOLO sudah akurat, hasil OCR masih memerlukan *preprocessing* tambahan (seperti *binarization*, *sharpening*, atau *denoising*) pada gambar yang di-*crop* tersebut untuk meningkatkan akurasi ekstraksi nilai numerik.
-
-```
-```
