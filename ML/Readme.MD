@@ -17,7 +17,13 @@ Berdasarkan pengujian, hasil deteksi optimal diperoleh dengan **preprocessing ga
 
 > Notes: Download dataset ada di [Download dataset ada di [Capstone-Dicoding](https://github.com/rfirmn/Capstone-Dicoding)
 
-### 1. Instalasi Dependensi
+### 1. Instalasi Model
+
+Install model yang digunakan pada google drive berikut `https://drive.google.com/drive/folders/1YelOY4odI0NNTQWgDvR9V0MeOtZsS1XC?usp=drive_link`
+
+Cukup install file `my_model.pt`
+
+### 2. Instalasi Dependensi
 
 Instal semua *library* yang diperlukan (disarankan menggunakan `requirements.txt` jika Anda membuatnya, atau instal satu per satu):
 
@@ -27,39 +33,38 @@ pip install -r requirements.txt
 
 > **Catatan Tesseract:** Pastikan perangkat Anda memiliki *engine* Tesseract OCR yang terinstal secara sistem. Jika menggunakan Windows/Linux, Anda mungkin perlu mengunduhnya secara terpisah.
 
-### 2\. Struktur Direktori
+### 3\. Struktur Direktori
 
 Pastikan struktur direktori Anda sesuai dengan *path* yang digunakan dalam *notebook*:
 
 ```
 .
-├── YOLO Model/
-│   └── my_model.pt             
+├── my_model.pt
 ├── image_dataset/
 │   └── image1.jpeg            
 ├── infrence_model.ipynb    
 └── cropped_objects/            
 ```
 
-### 3\. Eksekusi Notebook
+### 4\. Eksekusi Notebook
 
 Buka file **`infrence_base_yolo.ipynb`** dan jalankan sel-sel secara berurutan:
 
-#### 3.1. Sel 1 & 2: Instalasi & *Inferensi* YOLO
+#### 4.1. Sel 1 & 2: Instalasi & *Inferensi* YOLO
 
 Sel ini akan memuat `my_model.pt` dan melakukan deteksi pada `image_dataset/image1.jpeg` (setelah di-*resize* ke 640x640).
 
   * **Input:** Gambar berukuran 640x640.
   * **Output Konsol:** Daftar semua objek yang terdeteksi (`garam`, `gula`, `lemak`, dll.), beserta koordinat *Bounding Box* (BBox) dan skor *confidence*-nya.
 
-#### 3.2. Sel 3: *Cropping* (Pemotongan)
+#### 4.2. Sel 3: *Cropping* (Pemotongan)
 
 Sel ini mengambil BBox yang dihasilkan pada langkah 3.1 dan memotong bagian-bagian nutrisi tersebut dari gambar 640x640.
 
   * **Logika Penting:** Objek dengan label `"nutrition-fact"` **dilewati**, karena yang diperlukan adalah komponen di dalamnya (gula, garam, dll.).
   * **Output Folder:** Segmen gambar hasil *crop* disimpan di direktori **`cropped_objects/`**.
 
-#### 3.3. Sel 4: OCR dengan *Upscaling*
+#### 4.3. Sel 4: OCR dengan *Upscaling*
 
 Sel ini mengiterasi semua gambar yang baru saja di-*crop* dan menerapkan OCR.
 
