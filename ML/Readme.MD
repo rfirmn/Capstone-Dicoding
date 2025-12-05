@@ -24,7 +24,7 @@ Install model yang digunakan pada google drive berikut:
 Cukup install file `my_model.pt`
 
 ```
-https://drive.google.com/drive/folders/1YelOY4odI0NNTQWgDvR9V0MeOtZsS1XC?usp=drive_link
+https://drive.google.com/drive/folders/1AV3iyQzViq9BVJXDG_i4CkIT4Ix0FF0_
 ```
 
 ### 2. Instalasi Dependensi
